@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.seccionH1{
+    background-color: rgb(199, 220, 240);
+    margin: 2rem;
+    text-align: justify;
+    color: grey;
+}
+
+h1{
+    color: lightseagreen;
+    border: 5px dashed black;
+    border-style: dashed;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+
+
+#logoIndex {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 5px dashed black;
+}
+
+.iconoWhatsapp {
+    font-size: 60px;
+}
+.iconoFacebook {
+    font-size: 60px;
+}
+.iconoTiktok {
+    font-size: 60px;
+}
+.iconoInstagram {
+    font-size: 60px;
+}
