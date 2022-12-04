@@ -3,44 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Electronics 3D</title>
 </head>
 <body>
+    
     <header>
-        <nav>
+        <div class="grid_Container">
+        <nav class="navegacion">
             <ul>
-                <li>
+                <li class="nav_item">
                     <a href="./index.html">Inicio</a>
                 </li>
-                <li>
+                <li class="nav_item">
                     <a href="./quienes-somos.html">¿Quiénes somos?</a>
                 </li>
-                <li>
+                <li class="nav_item">
                     <a href="./comprar.html">Comprar</a>
                 </li>
-                <li>
+                <li class="nav_item">
                     <a href="./contacto.html">Contacto</a>
                 </li>
-            </ul>
+                <li class="nav_item" id="buscar">
+                    <input type="text" placeholder="Busca aquí" required>
+                    <div class="btn">
+                        <iconify-icon icon="material-symbols:search-check"></iconify-icon>
+                    </div>
+            </li>
+        </ul>
         </nav>
-        <div>
-            <img id="logoIndex"  src="./imagenes/Junio (1).png"    alt="Logo">
+    
+        <div> 
+            <img id="logoIndex" src="./imagenes/Junio (1).png" alt="Logo" style="
+            width: 130px;
+            height: 130px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-top: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            margin-left: 15px;">
+            <p class="slogan">¡Materializamos tus ideas para un mundo mejor!<p>
         </div>
+    </div>
+    
     </header>
+
     <main>
         <section class="seccionH1">
             <h1 class="claseH1" id="tituloIndex">BIENVENIDO A ELECTRONICS 3D</h1>
-            <p>En nuestra tienda encontrarás lo mejor de manufactura aditiva, cursos de tecnología y mucho más, experimenta crear nuevas posibilidades con estas nuevas tecnologías y así expandir tus horizontes hasta el otro lado del mundo.</p>
+            <img class="imagenPos" src="./imagenes/DesarrollodeProyectos.jpeg" alt="DP">
+            <p class="introducción">En nuestra tienda encontrarás lo mejor de manufactura aditiva, cursos de tecnología y mucho más, experimenta crear nuevas posibilidades con estas nuevas tecnologías y así expandir tus horizontes hasta el otro lado del mundo.</p>
+            
+
         </section>
+       
+        <div class="gridContenido">
         <div>
             <iframe  width="560" height="315" src="https://www.youtube.com/embed/L14oS30P2Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <aside>
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Felectronics3dmx%2Fposts%2Fpfbid02iny8mvwJopPVG58ptt4H2FYYprDZmnu5neqwtgVQD6KVYQZWA588b23WFQugW9Mel&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            <div>            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Felectronics3dmx%2Fposts%2Fpfbid02iny8mvwJopPVG58ptt4H2FYYprDZmnu5neqwtgVQD6KVYQZWA588b23WFQugW9Mel&show_text=true&width=500" width="500" height="654" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             <audio src="./Audio/Cancion.mp3" autoplay controls></audio>           
         </aside>
+    </div>
+
+    </div>
     </main>
     <footer>
         <p>Electronics 3D --- Todos los derechos </p>
@@ -55,5 +86,6 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
 </html>

@@ -9,26 +9,178 @@
     box-sizing: border-box;
     font-family: 'Patrick Hand', cursive;
 }
-
+body{
+    font-family: 'Patrick Hand', cursive;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(229, 194, 219);
+}
+#buscar {
+    position: absolute;
+    padding: 2px;
+}
+#buscar input{
+    width: 0px;
+    height: 20px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;    
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:rgb(100, 178, 250);
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 6s ease;
+}
+#buscar:hover input{
+    width: 240px;
+}
+#buscar input:focus{
+    width: 240px;
+}
 .seccionH1{
     background-color: rgb(199, 220, 240);
     margin: 2rem;
     text-align: justify;
     color: grey;
 }
+.grid_Container{
+    border: 1px solid black;
+    display: grid;
+    background-color: rgb(199, 220, 240);
+    grid-template-columns: 1fr 0.5fr;
+    gap: 5px;
+    padding: 20px;
+}
+.gridImagenes{
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(199, 220, 240);
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 1px;
+    padding: 10px;
+}
+.seleccion{
+    text-align: center;
+}
+#Productos{
+    width: 420px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
 
-h1{
+.carrito{
+ 
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 70px;
+    top: 0;
+    width: 100%;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    background-color: #2d4263;
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: #11294d;
+}
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.informacion>p:first-child{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio{
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio .span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: #263143;
+    width: 100px;
+    height: 35;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: #2D4263;
+}
+.carro{
+        
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    
+}
+.gridContenido{
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(199, 220, 240);
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 1px;
+    padding: 10px;
+}
+.Gale{
+    width: 300px;
+    height: 300px;
+}
+H1 {
+   
     color: lightseagreen;
     border: 5px dashed black;
     border-style: dashed;
     text-align: center;
+    justify-content: center;
 }
 
 p{
-    text-align: justify;
+    overflow: auto;
+    height: 25px;
+    min-width: 400px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
     font-family: 'Patrick Hand', cursive;
 }
-
 
 
 
@@ -45,9 +197,30 @@ p{
 .iconoFacebook {
     font-size: 60px;
 }
-.iconoTiktok {
+.iconoTiktok { 
     font-size: 60px;
 }
 .iconoInstagram {
     font-size: 60px;
+}
+.imagenPos {
+    position: static;
+    top: 50px; left: 30px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 5px dashed black;
+}
+.nav_item {
+    display: inline;
+}
+.nav_item:hover {
+    color: black;
+    background-color: lightseagreen;
+}
+
+.navegacion{
+    height: 26px;
+    background-color: rgb(199, 220, 240);
+    border: 3px ;
 }
