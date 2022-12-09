@@ -1,0 +1,14 @@
+.comprar {
+  background-color: #263143;
+  width: 100px;
+  height: 35;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.comprar:hover {
+  background-color: #2D4263;
+}/*# sourceMappingURL=mixin.css.map */

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./base.css">
     <title>Comprar</title>
 </head>
 <body>
@@ -51,15 +52,15 @@
     
     <main>
         <section>
-            <h1>¿Cómo comprar?</h1>
+            <h1 class="Titulo1">¿Cómo comprar?</h1>
             <ol class="seleccion">
                 <li>1.- Selecciona los poductos</li>
                 <li>2.- Selecciona el método de pago</li>
                 <li>3.- Selecciona el tipo de entrega</li>
             </ol>
             <div class="carrito" id="header"> 
-            <h1>Shopping Car</h1>
-            <img class="carro" src="/imagenes/carrito.jpg" alt="carrito compras" style="
+            <h2>Shopping Car</h2>
+            <img class="carro" src="./imagenes/carrito.jpg" alt="carrito compras" style="
              width: 130px;
             height: 130px;
             padding-right: 10px;
@@ -73,67 +74,67 @@
             </div>
             <div class="contenedor" id="contenedor">
                 <div>
-                    <img src="/imagenes/bluecastvent.jpg" alt="Producto1" id="Productos">
+                    <img src="./imagenes/bluecastvent.jpg" alt="Producto1" id="Productos">
                     <div class="informacion">
                         <p>Resina Bluecast</p>
                         <p class="precio">$3,959 <span>.99</span></p>
-                        <button>Comprar</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div>
-                    <img src="/imagenes/ABSLIKEBOS.jpg" alt="Producto2" id="Productos">
+                    <img src="./imagenes/ABSLIKEBOS.jpg" alt="Producto2" id="Productos">
                     <div class="informacion">
                         <p>Resina Boster ABS</p>
                         <p class="precio">$959 <span>.99</span></p>
-                        <button>Comprar</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div>
-                    <img src="/imagenes/JOYCAS.jpg" alt="Producto3" id="Productos">
+                    <img src="./imagenes/JOYCAS.jpg" alt="Producto3" id="Productos">
                     <div class="informacion">
                         <p>Resina Boster Casteable</p>
                         <p class="precio">$2,359 <span>.99</span></p>
-                        <button>Comprar</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div>
-                    <img src="/imagenes/Kit3.jpg" alt="Producto4" id="Productos">
+                    <img src="./imagenes/Kit3.jpg" alt="Producto4" id="Productos">
                     <div class="informacion">
                         <p>Resina Sunlu Kit 3 Litros</p>
                         <p class="precio">$1,849</p>
-                        <button>Comprar</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div>
-                    <img src="/imagenes/kit5.jpg" alt="Producto5" id="Productos">
+                    <img src="./imagenes/kit5.jpg" alt="Producto5" id="Productos">
                     <div class="informacion">
                         <p>Resina Sunlu Kit 5 Litros</p>
                         <p class="precio">$2,949</p>
-                        <button>Comprar</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div>
-                    <img src="/imagenes/kit10.jpg" alt="Producto6" id="Productos">
+                    <img src="./imagenes/kit10.jpg" alt="Producto6" id="Productos">
                     <div class="informacion">
                         <p>Resina Sunlu Kit 10 Litros</p>
                         <p class="precio">$5,749</p>
-                        <button>Comprar</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div>
-                    <img src="/imagenes/Ender3v2.jpg" alt="Producto7" id="Productos">
+                    <img src="./imagenes/Ender3v2.jpg" alt="Producto7" id="Productos">
                     <div class="informacion">
                         <p>Impresora 3D Creality Ender 3v2</p>
                         <p class="precio">$4,899 </p>
-                        <button>Comprar</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
                 <div>
-                    <img src="/imagenes/Protej.jpg" alt="Producto8" id="Productos">
+                    <img src="./imagenes/Protej.jpg" alt="Producto8" id="Productos">
                     <div class="informacion">
                         <p>3 Kg PETG Protej</p>
                         <p class="precio">$1,090 </p>
-                        <button>Comprar</button>
+                        <button class="comprar">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -171,7 +172,7 @@
                     <input type="radio" name="TipoDeCompra" id="">
                 </div>
                
-                <input type="submit" value="Enviar pedido">
+                <input type="submit"class="btn" value="Enviar pedido">
             </form>
         </section>
         <script src="app.js"></script> 

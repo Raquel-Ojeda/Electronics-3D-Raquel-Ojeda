@@ -30,7 +30,7 @@ body{
     border: 1px solid silver;
     border-radius: 30px;
 }
-.btn{
+.botn{
     position: absolute;
     top: 0;
     right: 0;
@@ -44,6 +44,10 @@ body{
     border-radius: 50%;
     cursor: pointer;
     transition: all 6s ease;
+}
+
+.textCarousel{
+    color: rgb(13, 133, 170);
 }
 #buscar:hover input{
     width: 240px;
@@ -65,10 +69,14 @@ body{
     gap: 5px;
     padding: 20px;
 }
+.cardDP{
+    width: 18rem;
+    align-items: center;
+}
 .gridImagenes{
     border: 1px solid black;
     display: flex;
-    background-color: rgb(199, 220, 240);
+  
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr 0.5fr;
     gap: 1px;
@@ -129,20 +137,7 @@ body{
     font-size: 17px;
     font-weight: 300;
 }
-.informacion button{
-    background-color: #263143;
-    width: 100px;
-    height: 35;
-    border-radius: 10px;
-    border: none;
 
-    font-size: 17px;
-    font-weight: 300;
-    cursor: pointer;
-}
-.informacion button:hover{
-    background-color: #2D4263;
-}
 .carro{
         
         width: 5rem;
@@ -163,16 +158,19 @@ body{
     width: 300px;
     height: 300px;
 }
-H1 {
-   
-    color: lightseagreen;
-    border: 5px dashed black;
-    border-style: dashed;
-    text-align: center;
-    justify-content: center;
-}
 
-p{
+.btn{
+    border-radius: 15px;
+}
+.btnGreen{
+    color: black;
+    background-color: lightseagreen;
+}
+.btn-primary:hover{
+    color: black;
+    background-color: rgb(95, 32, 178);
+}
+.introducción{
     overflow: auto;
     height: 25px;
     min-width: 400px;
@@ -195,7 +193,7 @@ p{
     font-size: 60px;
 }
 .iconoFacebook {
-    font-size: 60px;
+   font-size: 60px;
 }
 .iconoTiktok { 
     font-size: 60px;
@@ -223,4 +221,96 @@ p{
     height: 26px;
     background-color: rgb(199, 220, 240);
     border: 3px ;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    body{
+        color: black;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #logoIndex{
+        align-items: right;
+        justify-content: right;
+        width: 130px;
+            height: 130px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-top: 15px;
+            margin-right: 1px;
+            margin-bottom: 15px;
+            margin-left: 95px;
+    }
+    .video{
+        width: auto;
+    }
+    .facebook{
+        width: auto;
+    }
+    .menuNavegacion{
+       flex-direction: column;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    body{
+        background-color:lightseagreen;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #logoIndex{
+        align-items: right;
+        justify-content: right;
+        width: 130px;
+            height: 130px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-top: 15px;
+            margin-right: 1px;
+            margin-bottom: 15px;
+            margin-left: 95px;
+    }
+    .video{
+        width: auto;
+    }
+    .facebook{
+        width: auto;
+    }
+
+}
+@media only screen and (min-width: 769px) {
+    body{
+        color: black;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #logoIndex{
+        align-items: right;
+        justify-content: right;
+        width: 130px;
+            height: 130px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-top: 15px;
+            margin-right: 1px;
+            margin-bottom: 15px;
+            margin-left: 95px;
+    }
+    .video{
+        width: auto;
+    }
+    .facebook{
+        width: auto;
+    }
+    .menuNavegacion{
+       flex-direction: column;
+    }
 }

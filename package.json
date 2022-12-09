@@ -1,0 +1,20 @@
+{
+  "name": "electronics-3d-raquel-ojeda",
+  "version": "1.0.0",
+  "description": "E-commerce de tecnología.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raquel-Ojeda/Electronics-3D-Raquel-Ojeda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raquel-Ojeda/Electronics-3D-Raquel-Ojeda/issues"
+  },
+  "homepage": "https://github.com/Raquel-Ojeda/Electronics-3D-Raquel-Ojeda#readme"
+}

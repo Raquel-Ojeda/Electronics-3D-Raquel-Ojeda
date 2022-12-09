@@ -1,0 +1,44 @@
+$tipografiaPrincipal:'Montserrat', sans-serif;
+header{
+    nav{
+        .navbar{
+            display: flex;
+            justify-content: space-evenly;
+            a{
+                
+                color:antiquewhite;
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+body{
+    background-color: rgb(229, 194, 219);
+}
+h1{
+    font-family: $tipografiaPrincipal;
+    color: lightseagreen;
+    border: 5px dashed black;
+    border-style: dashed;
+    text-align: center;
+    justify-content: center;
+}
+//extend
+section{
+    .Titulo1{
+        font-size: 30px;
+        border: 1px solid blue;
+        text-align: center;
+        color: rgb(255,255,255);
+        border-radius: 10px;
+        border-style: dashed;
+        background: rgb(131,58,180);
+        background: linear-gradient(#e66465, #9198e5);
+    }
+    .carrito{
+        @extend .Titulo1;
+        text-transform: uppercase;
+    }
+}
