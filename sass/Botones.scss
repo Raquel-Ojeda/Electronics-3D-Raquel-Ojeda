@@ -1,4 +1,4 @@
-.comprar{
+@mixin comprar{
     background-color: #263143;
     width: 100px;
     height: 35;
@@ -9,6 +9,7 @@
     font-weight: 300;
     cursor: pointer;
 }
-.comprar:hover{
-    background-color: #2D4263;
+
+@mixin comprarhover{
+    background-color:#2D4263;
 }
