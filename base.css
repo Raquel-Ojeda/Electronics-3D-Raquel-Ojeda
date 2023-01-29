@@ -25,12 +25,11 @@ header nav .navbar a:hover {
 }
 
 body {
-  background-color: rgb(229, 194, 219);
+  background-color: rgb(230, 225, 229);
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
-  color: lightseagreen;
+  color: rgb(0, 0, 0);
   border: 5px dashed black;
   border-style: dashed;
   text-align: center;

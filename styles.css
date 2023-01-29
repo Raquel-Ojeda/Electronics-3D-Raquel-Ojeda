@@ -4,6 +4,7 @@
 
 
 *{
+   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +15,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: rgb(229, 194, 219);
+    background-color: rgb(230, 225, 229);
 }
 #buscar {
     position: absolute;
@@ -57,7 +58,7 @@ body{
 }
 .seccionH1{
     background-color: rgb(199, 220, 240);
-    margin: 2rem;
+    margin: 5rem;
     text-align: justify;
     color: grey;
 }
@@ -148,10 +149,11 @@ body{
 .gridContenido{
     border: 1px solid black;
     display: flex;
+    align-items: center;
     background-color: rgb(199, 220, 240);
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr 0.5fr;
-    gap: 1px;
+    gap: 10px;
     padding: 10px;
 }
 .Gale{
@@ -172,8 +174,8 @@ body{
 }
 .introducción{
     overflow: auto;
-    height: 25px;
-    min-width: 400px;
+    height: 50px;
+    min-width: 230px;
     width: 50%;
     text-align: center;
     justify-content: center;
@@ -256,11 +258,23 @@ body{
 @media only screen and (min-width: 481px) and (max-width: 768px){
     body{
         background-color:lightseagreen;
-        color: white;
+        color: rgb(34, 15, 204);
         align-items: center;
         justify-content: center;
     }
-    
+    .Gale{
+        width: 150px;
+        height: 150px;
+        gap: 1px;
+        padding: 10px;
+    }
+    .map{
+        width: 150px;
+        height: 150px;
+        gap: 1px;
+        padding: 10px;
+    }
+
     #logoIndex{
         align-items: right;
         justify-content: right;
@@ -285,7 +299,8 @@ body{
 }
 @media only screen and (min-width: 769px) {
     body{
-        color: black;
+        background-color: rgb(230, 225, 229);
+        color: rgb(8, 8, 8);
         align-items: center;
         justify-content: center;
     }

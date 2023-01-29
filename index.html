@@ -13,50 +13,41 @@
 <body>
     
     <header>
-       <!--- <div class="grid_Container">
-        <nav>
-            <ul class="menuNavegacion">
-                <li class="nav_item">
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li class="nav_item">
-                    <a href="./quienes-somos.html">¿Quiénes somos?</a>
-                </li>
-                <li class="nav_item">
-                    <a href="./comprar.html">Comprar</a>
-                </li>
-                <li class="nav_item">
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <li class="nav_item" id="buscar">
-                    <input type="text" placeholder="Busca aquí" required>
-                    <div class="botn">
-                        <iconify-icon icon="material-symbols:search-check"></iconify-icon>
-                    </div>
-            </li>
-        </ul>
-        </nav>-->
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">Menú</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a href="./index.html">Inicio</a>
-                  <a href="./quienes-somos.html">¿Quiénes somos?</a>
-                  <a href="./comprar.html">Comprar</a>
-                  <a href="./contacto.html">Contacto</a>
-                </div>
-              </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./quienes-somos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ¿Quiénes somos?
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./quienes-somos.html">Sucursales</a></li>
+                    <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./comprar.html">Comprar</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://linktab.co/Electronics3D">Redes Sociales</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busca aquí" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
             </div>
-          </nav>
-
-        <div> 
+          </div>
+        </nav>
+        <!--
+        <div class="sticky-sm-bottom"> 
             <img id="logoIndex" src="./imagenes/Junio (1).png" alt="Logo">
             <p class="slogan">¡Materializamos tus ideas para un mundo mejor!<p>
-        </div>
+        </div>-->
     </div>
     
     </header>
@@ -75,36 +66,31 @@
                   <div class="carousel-item active">
                     <img src="./imagenes/impre1a2a-1024x512.jpg" class="d-block w-100" alt="I3D">
                     <div class="carousel-caption d-none d-md-block">
-                      <h2 class="textCarousel">Impresión 3D FDM</h2>
-                      <h3 class="textCarousel">Impresión a la calidad y presupuesto ideal para tus proyectos. Tu escoges, nosotros manufacturamos.</h3>
+                     
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="./imagenes/dlp5-1024x512.jpg" class="d-block w-100" alt="Dental">
                     <div class="carousel-caption d-none d-md-block">
-                      <h2 class="textCarousel">Impresión 3D en resina dental</h2>
-                      <h3 class="textCarousel">La tecnología ha avanzado al límite de crear aparatos dentales compatibles.</h3>
+                     
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="./imagenes/dlp4a-1024x512.jpg" class="d-block w-100" alt="BigFormat">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2 class="textCarousel">Impresión 3D en formato gigante</h2>
-                        <h3 class="textCarousel">Podemos crear el formato que busques de una sola pieza, contamos con las impresoras más grandes del país.</h3>
+                        
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="./imagenes/dlp1a-1024x512.jpg" class="d-block w-100" alt="Rings">
                     <div class="carousel-caption d-none d-md-block">
-                        <h2 class="textCarousel">Impresión 3D en resina Casteable para Fundición</h2>
-                        <h3 class="textCarousel">Proyectos prfectos para ahorrar y perfeccionar la fundición en detalles milimétricos, solo con nostros obtendrás la mejor calidad.</h3>
+                       
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="./imagenes/CORTEYGRABADO.jpg" class="d-block w-100" alt="CORTEYGRABADO">
                     <div class="carousel-caption d-none d-md-block">
-                      <h2 class="textCarousel">Corte y grabado láser</h2>
-                      <h3 class="textCarousel">Conoce nuestro corte y grabado láser para todo tipo de materiales.</h3>
+                  
                     </div>
                   </div>
                 </div>
@@ -118,47 +104,72 @@
                 </button>
               </div>
         </section>
+  
         <section class="seccionH1">
-            <h1 class="claseH1" id="tituloIndex">BIENVENIDO A ELECTRONICS 3D</h1>
+            <h1 class="Titulo1" id="tituloIndex">BIENVENIDO A ELECTRONICS 3D</h1>
             <section>
+              <div class="gridImagenes">
                 <div class="card cardDP">
                     <img src="./imagenes/DesarrollodeProyectos.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Desarrollo de Proyectos</h5>
-                      <p class="card-text">Conoce nuestro Desarrollo de proyectos, dónde llevamos de tu imaginación a lo real en un par de semanas.</p>
-                      <button class="btn btn-primary btnGreen">Quiero Desarrollar mi Proyecto</button>
+                      <p class="card-text">Conoce nuestro Desarrollo de proyectos, dónde llevamos de tu imaginación a lo real en un par de semanas. La mejor calidad conforme a lo que busques desarrollar, contamos con más de 7 manufacturas. Tu proyecto, tus reglas.</p>
+                      <a class="btn btn-primary btnGreen" href="./contacto.html">Desarrollar un Proyecto</a>
+                    </div>
+                  </div>
+                  <div class="card cardDP">
+                    <img src="./imagenes/tiendamini.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Tienda 3D</h5>
+                      <p class="card-text">En nuestra tienda encontrarás lo mejor de manufactura aditiva, cursos de tecnología y mucho más, experimenta crear nuevas posibilidades con estas nuevas tecnologías y así expandir tus horizontes hasta el otro lado del mundo.</p>
+                      <a href="./comprar.html" class="btn btn-primary btnGreen">Quiero Comprar</a>
+                    </div>
+                  </div>
+                  <div class="card cardDP">
+                    <img src="./imagenes/inyeccionservicio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Inyección en plástico</h5>
+                      <p class="card-text">Contamos con los ingenieros mejor capacitados del estado para desarrollar el producto en masa conforme a tus necesidades, contamos con el sericio completo con mas de 20 materiales para realizar el producto ideal.</p>
+                      <a href="./contacto.html" class="btn btn-primary btnGreen">Quiero Saber Más</a>
+                    </div>
+                  </div>
+                  <div class="card cardDP">
+                    <img src="./imagenes/scanmini1a.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Escaneo 3D</h5>
+                      <p class="card-text">Contamos con el equipo más sofisticado para escanear cualquier producto, ya sea instalado o portátil, nos adaptamos a tu necesidad para optimizar la ingeniería inversa y poder replicar lo mejor posible la pieza que busques.</p>
+                      <a href="./contacto.html" class="btn btn-primary btnGreen">Quiero Escanear</a>
                     </div>
                   </div>
             </section>
-            <img class="imagenPos" src="./imagenes/tiendamini.jpg" alt="DP">
-            <p class="introducción">En nuestra tienda encontrarás lo mejor de manufactura aditiva, cursos de tecnología y mucho más, experimenta crear nuevas posibilidades con estas nuevas tecnologías y así expandir tus horizontes hasta el otro lado del mundo.</p>
-        
+          
         </section>
    
-           
+      </div>
 
        
         <div class="gridContenido">
-        <div>
+        <div class="container text-center">
+        
             <aside>
+              <a href="https://api.whatsapp.com/send?phone=5212215901643" target="_blank"> <iconify-icon class="iconoWhatsapp" icon="dashicons:whatsapp"></iconify-icon></a>
+
+              <a href="https://www.facebook.com/electronics3dmx"target="_blank"><iconify-icon class="iconoFacebook" icon="akar-icons:facebook-fill"></iconify-icon></a>
+              <a href="https://www.tiktok.com/@electronics_3d"target="_blank"><iconify-icon class="iconoTiktok" icon="simple-icons:tiktok"></iconify-icon></a>
+              <a href="https://www.instagram.com/electronics_3d/"target="_blank"><iconify-icon class="iconoInstagram" icon="ri:instagram-line"></iconify-icon></a>
+            <!--
             <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/L14oS30P2Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe class="facebook" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Felectronics3dmx%2Fposts%2Fpfbid02XBNU5X5pmwUuZkBD5t22ymQKYRRdvy7NbxBvbHhBKHGfuNhNJVPCZif2BWBXqZHel&show_text=true&width=500" width="500" height="660" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>       
-        
-            <div> 
+            --><div> 
             <!--<audio class="audio" src="./Audio/Cancion.mp3" autoplay controls></audio>     -->      
         </aside>
     </div>
-
     </div>
 </div>
     </main>
     <footer>
         <p>Electronics 3D --- Todos los derechos </p>
-        <a href="https://api.whatsapp.com/send?phone=5212215901643" target="_blank"> <iconify-icon class="iconoWhatsapp" icon="dashicons:whatsapp"></iconify-icon></a>
-
-        <a href="https://www.facebook.com/electronics3dmx"target="_blank"><iconify-icon class="iconoFacebook" icon="akar-icons:facebook-fill"></iconify-icon></a>
-        <a href="https://www.tiktok.com/@electronics_3d"target="_blank"><iconify-icon class="iconoTiktok" icon="simple-icons:tiktok"></iconify-icon></a>
-        <a href="https://www.instagram.com/electronics_3d/"target="_blank"><iconify-icon class="iconoInstagram" icon="ri:instagram-line"></iconify-icon></a>
+       
 
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>

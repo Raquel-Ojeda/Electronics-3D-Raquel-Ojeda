@@ -4,105 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
     <title>Contacto</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./base.css">
+<link rel="shortcut icon" href="./imagenes/Junio (1).png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="grid_Container">
-        <nav class="navegacion">
-            <ul>
-                <li class="nav_item">
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li class="nav_item">
-                    <a href="./quienes-somos.html">¿Quiénes somos?</a>
-                </li>
-                <li class="nav_item">
-                    <a href="./comprar.html">Comprar</a>
-                </li>
-                <li class="nav_item">
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <li class="nav_item" id="buscar">
-                    <input type="text" placeholder="Busca aquí" required>
-                    <div class="btn">
-                        <iconify-icon icon="material-symbols:search-check"></iconify-icon>
-                    </div>
-            </li>
-        </ul>
-        </nav>
     
-        <div> 
-            <img id="logoIndex" src="./imagenes/Junio (1).png" alt="Logo" style="
-            width: 130px;
-            height: 130px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            padding-top: 10px;
-            margin-top: 15px;
-            margin-right: 15px;
-            margin-bottom: 15px;
-            margin-left: 15px;">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./quienes-somos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ¿Quiénes somos?
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./quienes-somos.html">Sucursales</a></li>
+                    <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./comprar.html">Comprar</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://linktab.co/Electronics3D">Redes Sociales</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busca aquí" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <!--
+        <div class="sticky-sm-bottom"> 
+            <img id="logoIndex" src="./imagenes/Junio (1).png" alt="Logo">
             <p class="slogan">¡Materializamos tus ideas para un mundo mejor!<p>
-        </div>
+        </div>-->
     </div>
     
     </header>
-    <main>
-        <h1>¡¡Contáctanos!!</h1>
-        <section>
-            <table>
-                <tr>
-                    <td><a href="https://api.whatsapp.com/send?phone=5212215901643" target="_blank">WhatsApp</a></td>
-                    <td><a href="https://www.facebook.com/electronics3dmx"target="_blank">Facebook</a></td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.tiktok.com/@electronics_3d"target="_blank">TikTok</a></td>
-                    <td><a href="https://www.instagram.com/electronics_3d/"target="_blank">Instagram</a></td>
-                </tr>
-            </table>
-            <br>
-            <form>
-                <label for="">Ingresa tu nombre</label>
-                <input type="text" name="" id="">
-                <label for="">Ingresa tu apellido</label>
-                <input type="text" name="" id="">
-                <label for="">Ingresa tu dirección</label>
-                <input type="text" name="" id="">
-                <label for="">¿Qué edad tienes?</label>
-                <input type="number" name="" id="">
-                <input type="email" name="" placeholder="Coloca tu email" id="">
-                <input type="password" name="" placeholder="Contraseña" id="">
-                <div>
-                    <textarea name="" id="" cols="25" rows="15" placeholder="Envíanos tu duda"></textarea>
-                </div>
-                <input type="submit" value="Enviar formulario">
-                <input type="reset" value="Borrar todo">
-            </form>
-        </section>
-        <h1>¡Conoce nuestras sucursales!</h1>
-        <div class="gridImagenes">
-            <div>
-            <img src="./imagenes/Puebla.jpeg" alt="Puebla" class="Gale">
-            <h2> Sucursal Puebla</h2>
-            <p>Somos una empresa con más de 8 años de experiencia en el mercado de impresión 3D, conoce nuestros diversos servicios y productos en nuestra sede matriz de Puebla. Ubicados a 10 minutos del Centro.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.287219805894!2d-98.1745307853869!3d19.051105387102155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc1a2ea99d51b%3A0x78c4cc9dbab6c454!2sElectronics%203D!5e0!3m2!1ses-419!2smx!4v1668744635667!5m2!1ses-419!2smx" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
-        <div>
-            
-            <img src="./imagenes/Cuernavaca.jpeg" alt="Cuernavaca" class="Gale">
-            <h2> Sucursal Cuernavaca</h2>
-            <p> Conoce nuestra sucursal de Cuernavaca ubicada en la Plaza de a tecnología, ideal para proyectos escolares con los mismos servicios y productos de nuestra sede matriz.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.180822002802!2d-99.2370767853891!3d18.92338878717561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddf4a18faa463%3A0x8c0645f120aeedb4!2sElectronics%203D%20Cuernavaca%20(E3DC)!5e0!3m2!1ses-419!2smx!4v1668744608681!5m2!1ses-419!2smx" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
-        <div>
-            <img src="./imagenes/Veracruz.jpeg" alt="Veracruz" class="Gale">
-            <h2> Sucursal Veracruz</h2>
-            <p> Conoce nuestra sucursal de Veracruz ubicada a 10 minutos del puerto, contamos con los mismos servicios y productos de la sucursal matriz, ideal para realizar cualquier proyecto.</p>
-        </div>
-    </div>
-    </main>
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
+    <main>
+       <section class="seccionH1">
+        <h1 class="Titulo1" id="tituloIndex"> CONTÁCTANOS</h1>
+        <form>
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Calle y número</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 calle esquina..">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Colonia</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, estudio, piso...">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Estado</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Aguascalientes</option>
+                    <option>Baja California</option>
+                    <option>Baja California Sur</option>
+                    <option>Campeche</option>
+                    <option>Chiapas</option>
+                    <option>Chihuahua</option>
+                    <option>Ciudad de México</option>
+                    <option>Coahuila de Zaragoza</option>
+                    <option>Colima</option>
+                    <option>Durango</option>
+                    <option>Guanajuato</option>
+                    <option>Guerrero</option>
+                    <option>Guerrero</option>
+                    <option>Jalisco</option>
+                    <option>México</option>
+                    <option>Michoacán de Ocampo</option>
+                    <option>Morelos</option>
+                    <option>Nayarit</option>
+                    <option>Nuevo León</option>
+                    <option>Oaxaca</option>
+                    <option>Puebla</option>
+                    <option>Querétaro Arteaga</option>
+                    <option>Quintana Roo</option>
+                    <option>San Luis Potosí</option>
+                    <option>Sinaloa</option>
+                    <option>Sonora</option>
+                    <option>Tabasco</option>
+                    <option>Tamaulipas</option>
+                    <option>Tlaxcala</option>
+                    <option>Veracruz</option>
+                    <option>Yucatán</option>
+                    <option>Zacatecas</option>
+                    <option>Otra parte del mundo</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Código Postal</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Edad</label>
+                    <input type="number" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Escríbenos tu consulta</label>
+                    <input type="text" class="form-control" id="inputfrage">
+                  </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Enviar formulario</button>
+                  <button type="reset" class="btn btn-primary">Borrar formulario</button>
+                </div>
+              </form>
+        </form>
+   
+       <br>
+            <h1 class="Titulo1" id="tituloIndex"> VISÍTANOS</h1>
+            <section>
+                <p> Contamos con diversas sucursales en todo el país, además de realizar envíos a todo México, Estados Unidos y Latinoamérica. Agenda una cita en la sucursal más cercana y desarrolla tu proyecto con nosotros.</p>
+                <div class="gridImagenes">
+                    <div>
+                    <img src="./imagenes/Puebla.jpeg" alt="Puebla" class="Gale">
+                    <h2> Sucursal Puebla</h2>
+                    <p class="introducción">Somos una empresa con más de 8 años de experiencia en el mercado de impresión 3D, conoce nuestros diversos servicios y productos en nuestra sede matriz de Puebla. Ubicados a 10 minutos del Centro.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.287219805894!2d-98.1745307853869!3d19.051105387102155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc1a2ea99d51b%3A0x78c4cc9dbab6c454!2sElectronics%203D!5e0!3m2!1ses-419!2smx!4v1668744635667!5m2!1ses-419!2smx" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>        </div>
+                <div>
+                    
+                    <img src="./imagenes/Cuernavaca.jpeg" alt="Cuernavaca" class="Gale">
+                    <h2> Sucursal Cuernavaca</h2>
+                    <p class="introducción"> Conoce nuestra sucursal de Cuernavaca ubicada en la Plaza de la tecnología, ideal para proyectos escolares con los mismos servicios y productos de nuestra sede matriz.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.180822002802!2d-99.2370767853891!3d18.92338878717561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddf4a18faa463%3A0x8c0645f120aeedb4!2sElectronics%203D%20Cuernavaca%20(E3DC)!5e0!3m2!1ses-419!2smx!4v1668744608681!5m2!1ses-419!2smx" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  class="map"></iframe>        </div>
+                <div>
+                    <img src="./imagenes/Veracruz.jpeg" alt="Veracruz" class="Gale">
+                    <h2> Sucursal Veracruz</h2>
+                    <p class="introducción"> Conoce nuestra sucursal de Veracruz ubicada a 10 minutos del puerto, contamos con los mismos servicios y productos de la sucursal matriz, ideal para realizar cualquier proyecto.</p>
+                </div>
+            </div>
+                  
+
+                  
+            </section>
+            
+        
+        </section>
+   
+    </br>
+
+       
+        <div class="gridContenido">
+        <div class="container text-center">
+        
+            <aside>
+              <a href="https://api.whatsapp.com/send?phone=5212215901643" target="_blank"> <iconify-icon class="iconoWhatsapp" icon="dashicons:whatsapp"></iconify-icon></a>
+
+              <a href="https://www.facebook.com/electronics3dmx"target="_blank"><iconify-icon class="iconoFacebook" icon="akar-icons:facebook-fill"></iconify-icon></a>
+              <a href="https://www.tiktok.com/@electronics_3d"target="_blank"><iconify-icon class="iconoTiktok" icon="simple-icons:tiktok"></iconify-icon></a>
+              <a href="https://www.instagram.com/electronics_3d/"target="_blank"><iconify-icon class="iconoInstagram" icon="ri:instagram-line"></iconify-icon></a>
+            <!--
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/L14oS30P2Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="facebook" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Felectronics3dmx%2Fposts%2Fpfbid02XBNU5X5pmwUuZkBD5t22ymQKYRRdvy7NbxBvbHhBKHGfuNhNJVPCZif2BWBXqZHel&show_text=true&width=500" width="500" height="660" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>       
+            --><div> 
+            <!--<audio class="audio" src="./Audio/Cancion.mp3" autoplay controls></audio>     -->      
+        </aside>
+    </div>
+    </div>
+</div>
+    </main>
+    <footer>
+        <p>Electronics 3D --- Todos los derechos </p>
+       
+
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <!--<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
