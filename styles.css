@@ -182,13 +182,15 @@ body{
     font-family: 'Patrick Hand', cursive;
 }
 
-
+.productosEnCarrito {
+    display: flex;
+    justify-content: space-between;
+}
 
 #logoIndex {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    border: 5px dashed black;
 }
 
 .iconoWhatsapp {
@@ -203,6 +205,7 @@ body{
 .iconoInstagram {
     font-size: 60px;
 }
+
 .imagenPos {
     position: static;
     top: 50px; left: 30px;
